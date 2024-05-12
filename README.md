@@ -21,7 +21,7 @@ Remember, don't keep passwords in your code!
 You can create files that are gitignored: `e2e/passwords.dev.json` `e2e/passwords.acc.json` In these json's files you
 can have for example:
 
-`[{ "email": "test.automation+444@tsh.io", "password": "example" }]`
+`[{ "email": "test.automation+444@gmail.com", "password": "example" }]`
 
 Then use `npm run e2e:pass-acc` / `npm run e2e:pass-dev` to create base64 of these json files. This base64 save in
 `E2E_FIXTURE_USERS` in `.env` file and in github/bitbucket environments.
