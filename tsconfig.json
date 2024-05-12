@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "strict": true,
+    "allowJs": true,
+    "jsx": "preserve",
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "noImplicitOverride": true,
+    "useUnknownInCatchVariables": false
+  },
+  "include": ["**/*.ts", "**/*.tsx", "commitlint.config.js"],
+  "exclude": ["node_modules", ".eslintrc.json"]
+}

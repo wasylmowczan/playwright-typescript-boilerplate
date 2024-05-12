@@ -1,0 +1,32 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "prettier"],
+  "parserOptions": {
+    "project": ["./tsconfig.json"]
+  },
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "plugin:prettier/recommended"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "all",
+        "printWidth": 120,
+        "semi": true,
+        "singleQuote": true
+      }
+    ],
+    "@typescript-eslint/no-floating-promises": 2,
+    "no-dupe-keys": 2,
+    "curly": [2, "all"],
+    "complexity": [
+      2,
+      {
+        "max": 20
+      }
+    ],
+    "no-console": 2,
+    "no-empty": 1,
+    "newline-before-return": 1,
+    "object-shorthand": 1
+  }
+}

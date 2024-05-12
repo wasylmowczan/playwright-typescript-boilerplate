@@ -1,0 +1,54 @@
+{
+  "name": "playwright-typescript-boilerplate",
+  "version": "1.0.0",
+  "scripts": {
+    "e2e:install-webkit": "playwright install --with-deps webkit",
+    "e2e:install": "playwright install",
+    "e2e:install-deps": "playwright install --with-deps",
+    "e2e:full": "playwright test --config e2e/config/playwright-full-run.config.ts --retries=1",
+    "e2e:fast": "playwright test --config e2e/config/playwright-fast-run.config.ts --retries=1",
+    "e2e:debug": "playwright test --config e2e/config/playwright-debug-run.config.ts",
+    "e2e:pass-dev": "node -p -e 'Buffer.from(JSON.stringify(require(`./e2e/passwords.dev.json`))).toString(`base64`)'",
+    "e2e:pass-acc": "node -p -e 'Buffer.from(JSON.stringify(require(`./e2e/passwords.acc.json`))).toString(`base64`)'",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "lint-staged": "lint-staged",
+    "prettier": "prettier --write .",
+    "tsc": "tsc --noemit",
+    "resolve-audit": "resolve-audit",
+    "audit": "check-audit"
+  },
+  "dependencies": {
+    "@ngneat/falso": "^7.1.1",
+    "date-fns": "^2.30.0",
+    "dotenv": "^16.3.1",
+    "supertest": "^6.3.3",
+    "winston": "^3.11.0",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "@playwright/test": "^1.44.0",
+    "@types/supertest": "^2.0.15",
+    "@typescript-eslint/eslint-plugin": "^6.9.1",
+    "@typescript-eslint/parser": "^6.9.1",
+    "eslint": "^8.52.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "npm-audit-resolver": "^3.0.0-RC.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  },
+  "lint-staged": {
+    "**/*.{js,ts,jsx,tsx}": "eslint . --fix",
+    "**/*.json": "prettier --write"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
+}

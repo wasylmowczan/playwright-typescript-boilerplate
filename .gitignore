@@ -1,0 +1,23 @@
+# dependencies
+/node_modules
+
+# production
+/build
+
+# misc
+.DS_Store
+
+# Visual Studio Code
+.vscode/
+
+# local env files
+.env
+
+# Playwright
+e2e/traces/
+e2e/screenshots/
+e2e/playwright-report/
+e2e/test-results/
+e2e/.auth/
+e2e/passwords.dev.json
+e2e/passwords.acc.json
