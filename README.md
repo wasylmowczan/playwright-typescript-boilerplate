@@ -1,3 +1,10 @@
+<p align="center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Playwright_Logo.svg" alt="Simple Icons" width=370>
+<h3 align="center">Playwright Typescript Boilerplate</h3>
+<p align="center">
+Boilerplate project for Web/API Test Automation</p>
+</p>
+
 ## Structure
 
 - `components` - (page object pattern) objects that represent components used on multiple pages
@@ -37,3 +44,9 @@ And that's it. You can see that in `user-example` in `fixtures` the `addPassword
 - `npm run e2e:debug` - To run tests on chrome with headless=false
 - `npm run e2e:pass-acc` script should be used to convert `passwords.acc.json` to base64
 - `npm run e2e:pass-dev` script should be used to convert `passwords.dev.json` to base64
+
+## Contributors
+
+<a href="https://github.com/wasylmowczan/playwright-typescript-boilerplate/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=wasylmowczan/playwright-typescript-boilerplate" />
+</a>
