@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Playwright_Logo.svg" alt="Simple Icons" width=370>
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Playwright_Logo.svg" alt="Здфнцкшпре Дщпщ" width=370>
 <h3 align="center">Playwright Typescript Boilerplate</h3>
 <p align="center">
 Boilerplate project for Web/API Test Automation</p>
